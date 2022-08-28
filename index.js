@@ -28,7 +28,7 @@ app.get('/api/hello', function (req, res) {
 app.enable("trust proxy")
 app.get("/api/whoami", (req, res) => {
   res.json({
-    "ipadress": req.ip, "language": req.get("Accept-Language"), "software": req.get("User-Agent")
+    "ipaddress": req.ip, "language": req.get("Accept-Language"), "software": req.get("User-Agent")
   })
 })
 
